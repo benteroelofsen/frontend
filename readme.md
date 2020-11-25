@@ -38,21 +38,36 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+-Javascript werkte niet zoals geplant-
 
 **Screenshot(s):**
 
+<img src="images/eerste.png" alt="">
+<img src="images/tweede.png" alt="">
+<img src="images/derde.png" alt="">
+
+
+
 -screenshot(s) van hoe ver je bent met korte uitleg-
+- De achtergrond laat ik veranderen van zwart naar wit. Ik heb de summary's gestyld. -
 
 ### Agenda voor meeting
 
 -samen met je groepje opstellen-
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+**Ian**
+-layout plaatjes met verschillende grote-
+
+**Joep**
+- Wilt weten hoe je een website makkelijk responsive maakt.-
+
+**Merel**
+- Hoe maak je een hamburger menu-
+
+**Bente**
+-Hoe plaats je dropdown icoon naast de summary.-
+-Waarom werk mijn javascript niet?!?!-
+-hoe gaat de andere summary dicht als er een andere summary wordt geopend-
 
 ### Verslag van meeting
 

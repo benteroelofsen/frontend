@@ -18,13 +18,13 @@ body {
     background-image: radial-gradient(circle at 300px 30px, rgb(72, 13, 103), black 20%);
 }
 
-/*header*/
-
-
 .bg-active{
 background-color: white;
+    background-image: none;
 }
 
+
+/*header*/
 
 header {
     margin-top: 3em;
@@ -160,6 +160,8 @@ a.test
     position: relative;
     text-decoration: none;
     padding-bottom: 0.3em;
+    max-width: 12em;
+    overflow-x: hidden;
 
 }
 
@@ -181,9 +183,7 @@ a.test:hover:before {
   width: 100%;
 
 }
-a.test p {
 
-}
 
 /*https://paulund.co.uk/css-animation-link-underline*/
 
