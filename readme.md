@@ -56,18 +56,22 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -samen met je groepje opstellen-
 
 **Ian**
--layout plaatjes met verschillende grote-
+
+- Layout plaatjes met verschillende grote-
 
 **Joep**
+
 - Wilt weten hoe je een website makkelijk responsive maakt.-
 
 **Merel**
+
 - Hoe maak je een hamburger menu-
 
 **Bente**
--Hoe plaats je dropdown icoon naast de summary.-
--Waarom werk mijn javascript niet?!?!-
--hoe gaat de andere summary dicht als er een andere summary wordt geopend-
+
+- Hoe plaats je dropdown icoon naast de summary.-
+- Waarom werk mijn javascript niet?!?!-
+- hoe gaat de andere summary dicht als er een andere summary wordt geopend-
 
 ### Verslag van meeting
 
