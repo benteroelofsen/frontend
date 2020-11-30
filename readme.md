@@ -75,7 +75,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+-Wij hebben besproken hoe je een hamburger menu kan maken. Verder kan ik mijn javascript probleem oplossen in CSS. Ik moet voor de summary's aan de slag met een true en false statement in JS. Ik kan img naast de summary zetten.-
 
 
 
