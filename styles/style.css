@@ -5,23 +5,26 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-color: black;
-    font-family: avenir;
     margin: 0;
-    transition: all 1s ease;
+    font-family: avenir;
+    transition: all 1.5s ease-in-out;
+    width: 100%;
 }
 
 section {
     margin-right: .6em;
+    margin-left: 1em;
 }
 
 
 /*Kleuren achtergrond*/
 body {
     background-image:
-        radial-gradient(circle at 300px 30px, rgb(72, 13, 103), transparent 23%),
-        radial-gradient(circle at 210px 390px, green, black 9%)
+        radial-gradient(circle at 350px 30px, rgb(72, 13, 103), transparent 15%),
+        radial-gradient(circle at 210px 390px, darkgreen, transparent 6%)
 }
 
 .bg-active {
@@ -29,6 +32,17 @@ body {
     background-image: none;
 }
 
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+    }
+
+    .bg-active {
+        background-color: white;
+        background-image: none;
+    }
+
+} */
 
 /*header*/
 
@@ -47,31 +61,33 @@ header {
 
 @keyframes schommel {
     20% {
-        transform: rotate(15deg);
+        transform: rotate(15deg) scale(1.2);
     }
 
     40% {
-        transform: rotate(-10deg);
+        transform: rotate(-10deg) scale(.8);
     }
 
     60% {
-        transform: rotate(5deg);
+        transform: rotate(5deg) scale(1.2);
     }
 
     80% {
-        transform: rotate(-5deg);
+        transform: rotate(-5deg) scale(.8);
     }
 
     100% {
-        transform: rotate(0deg);
+        transform: rotate(0deg)scale(1);
     }
 }
 
-header:first-of-type img:hover {
-    animation: schommel 1s ease-out;
+header a {
+    z-index: 198;
 }
 
-/*https://www.tutorialspoint.com/css/css_animation_swing.htm*/
+header:first-of-type img:hover {
+    animation: schommel 1s ease-in-out;
+}
 
 header:first-of-type img {
     width: 9em;
@@ -81,45 +97,83 @@ header:first-of-type img {
 
 nav {
     position: fixed;
+    padding-top: 10em;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    transform: translatex(98%);
-    transition: .3s ease-in;
-
+    transform: translateY(-100%);
+    transition: .5s ease-in-out;
+    background: rgb(10, 10, 10);
+    z-index: 190;
 }
 
 nav ul {
-    padding-bottom: 300px;
+    position: relative;
+    left: -5%;
+    top: -10%;
+
 }
 
 nav ul li {
     list-style: none;
     color: transparent;
     -webkit-text-stroke: 0.03em #fff;
-    font-size: 3em;
-    padding: 4px;
+    font-size: 3.6em;
     border: none;
     text-align: center;
-    background: black;
+    background: rgb(10, 10, 10);
+    transition: .1s ease-in-out;
 }
+
+/* Java class nav zichtbaar */
 
 nav.open {
-    transform: translateX(0%);
-    width: 100%;
+    transform: translateY(0%);
 }
 
+
+/* Hovers nav */
+
+nav ul li:hover {
+    color: white;
+}
+
+nav ul li:first-of-type:hover {
+    transform: translateX(.2em) scale(1.1);
+    text-shadow: -.2em 0em .1em rgba(255, 255, 255, .2);
+}
+
+nav ul li:nth-of-type(2):hover {
+    transform: translateY(-.2em) scale(1.1);
+    text-shadow: 0em .2em .1em rgba(255, 255, 255, .2);
+
+}
+
+li:nth-of-type(3):hover {
+    transform: translateX(-.2em) scale(1.1);
+    text-shadow: .2em 0em .1em rgba(255, 255, 255, .2);
+
+}
+
+li:nth-of-type(4):hover {
+    transform: translateY(.2em) scale(1.1);
+    text-shadow: 0em -.2em .1em rgba(255, 255, 255, .2);
+
+}
+
+
+/* hamburger button  */
 
 button:first-of-type {
     position: absolute;
     margin-left: 22.6em;
     margin-top: -2em;
-    z-index: 100;
+    visibility: hidden;
 
 }
 
-button::before {
+button:first-of-type:before {
     content: "";
     position: absolute;
     margin-top: 15px;
@@ -127,28 +181,38 @@ button::before {
     height: 4px;
     left: 1em;
     background-color: #FFF;
+    visibility: visible;
+    z-index: 200;
 
 }
 
-button::after {
+button:first-of-type:after {
     content: "";
     position: absolute;
     width: 30px;
     height: 4px;
     left: 1em;
     background-color: #FFF;
+    visibility: visible;
+    z-index: 200;
+}
+
+/* .menu-burger.open button:first-of-type::before {
+    transform: rotate(45deg) translate(1em, -1em);
 
 }
 
-.gekruisd {
-    transform: rotate(45deg);
-}
+.menu-burger.open button:first-of-type::after {
+    transform: rotate(-45deg) translate(1em, 1em);
+
+} */
+
+
 
 /*1e section*/
 
 section:first-of-type {
     color: white;
-    margin-left: 1em;
 
 }
 
@@ -171,19 +235,24 @@ section:first-of-type a {
     position: relative;
     display: inline-block;
     transition: .3s ease-in;
-
 }
 
 section:first-of-type div {
     border-bottom: .25em solid #fff;
     height: 0em;
-    width: 18%;
-    position: absolute;
-    bottom: -5%;
-
-
+    width: 4em;
+    position: relative;
+    margin-top: -2em;
+    margin-bottom: 3em;
+    margin-left: .4em;
+    z-index: -100;
+    transition: .5s ease-in-out;
 }
 
+section:first-of-type div:hover {
+    width: 10em;
+    color: purple;
+}
 
 section:first-of-type p {
     font-weight: 100;
@@ -191,6 +260,7 @@ section:first-of-type p {
     word-spacing: 0.1em;
     line-height: 1.5em;
     margin-top: 5em;
+    margin-left: .4em;
     margin-bottom: 4em;
     color: white;
 }
@@ -212,24 +282,13 @@ a:nth-child(2):hover img {
 
 /*2e section (uitklappen)*/
 
+section:nth-of-type(2) {
+    position: relative;
+}
+
 summary::-webkit-details-marker {
     display: none;
 }
-
-/*https://justmarkup.com/articles/2020-09-22-styling-and-animation-details/*/
-
-section:nth-child(2) {
-    margin-left: 1em;
-}
-
-summary {
-    list-style: none;
-}
-
-details[open] summary {
-    color: rgb(125, 22, 221);
-}
-
 
 details summary {
     color: transparent;
@@ -237,7 +296,16 @@ details summary {
     font-size: 3em;
     padding: 4px;
     border: none;
+}
 
+details summary::after {
+    content: "v";
+    color: rgb(125, 22, 221);
+    margin-left: .5em;
+}
+
+details[open] summary {
+    color: rgb(125, 22, 221);
 }
 
 details summary:hover {
@@ -251,8 +319,11 @@ details p {
     margin-bottom: 1em;
     line-height: 2em;
     font-size: 1.3em;
-
 }
+
+
+
+/* link  */
 
 
 section:nth-child(2) a {
@@ -294,22 +365,197 @@ section:nth-child(2) a:hover:before {
 
 /*Derde section*/
 
-
 section:nth-child(3) {
     padding: 4em 0em 10em 1em;
-
+    display: flex;
+    flex-direction: column;
 }
 
 section:nth-child(3) article {
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    flex-direction: column;
+    margin-bottom: 2.5em;
 }
 
 section:nth-child(3) h2 {
-    font-size: 3.7em;
+    font-size: 3.6em;
     font-weight: 500;
-    margin-bottom: 10em;
+    margin-bottom: 2em;
+}
+
+section:nth-child(3) article img {
+    width: 95%;
+    display: flex;
+    order: -1;
+}
+
+section:nth-child(3) article p {
+    font-size: 1.2em;
+    margin-top: -2%;
+    font-weight: 200;
+}
+
+
+section:nth-child(3) a {
+    color: black;
+    display: block;
+    font-size: 1.3em;
+    margin-top: -.5em;
+    margin-bottom: 3em;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 0.3em;
+    max-width: 6.9em;
+    overflow-x: hidden;
+}
+
+
+section:nth-child(3) a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.05em;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+
+section:nth-child(3) a:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+#bedrijven {
+    width: 95%;
+    margin-left: 0;
+    transform: scale(1.1);
+    z-index: -100;
+}
+
+/* Vierde section */
+
+section:nth-child(4) {
+    position: relative;
+    color: white;
+}
+
+section:nth-child(4) h2 {
+    font-size: 3.2em;
+    font-weight: 300;
+    line-height: .3em;
+}
+
+section:nth-child(4) h2:nth-last-of-type(1) {
+    margin-left: 35%;
+}
+
+/* Pijltjes */
+
+#pijl-links::before {
+    position: absolute;
+    left: 1em;
+    top: 4em;
+    content: "←";
+    transform: scale(3);
+    opacity: .4;
+    pointer-events: none;
+}
+
+#pijl-rechts::before {
+    position: absolute;
+    left: 4.3em;
+    top: 4em;
+    content: "→︎";
+    transform: scale(3);
+}
+
+.huidige {
+    opacity: 1;
+}
+
+/* De quote */
+
+blockquote:first-of-type {
+    width: 95%;
+    margin-left: 0;
+    margin-top: 30%;
+    padding: 1em 1em 5em 2em;
+    border: .06em solid rgba(255, 255, 255, .2);
+}
+
+blockquote:first-of-type p {
+    width: 95%;
+    line-height: 1.6em;
+    font-weight: 100;
+    font-size: 1.2em;
+    margin-left: 0;
+}
+
+section:nth-of-type(4) img {
+    position: absolute;
+    top: 30em;
+    left: 9%;
+    width: 15%;
+}
+
+section:nth-of-type(4) h3 {
+    position: absolute;
+    top: 85%;
+    left: 30%;
+    font-size: .9em;
+}
+
+section:nth-of-type(4)>p {
+    position: absolute;
+    top: 89%;
+    left: 30%;
+    font-size: .8em;
+}
+
+/* vijfde section  */
+
+
+section:nth-of-type(5)> h2 {
+    font-size: 3.2em;
+    font-weight: 300;
+    line-height: 1.3em;
+    color: white;
+    margin: 1em 0em 2em 0em;
+}
+
+section:nth-of-type(5) a {
+    font-size: 1.6em;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    background-color: #000;
+    border: .02em solid white;
+    text-decoration: none;
+    padding: .5em 2.3em;
+    margin-left: .7em;
+    box-shadow: -.35em .35em 0em rgb(125, 22, 221);
+    transition: .3s;
+}
+
+section:nth-of-type(5) a:hover {
+    box-shadow: 0em 0em 0em rgb(125, 22, 221);
+    background-color: rgb(125, 22, 221);
+    border: none;
+
+}
+
+footer {
+    display: grid;
+    color: rgb(46, 45, 46);
+    margin-top: 7em;
+  
+}
+
+footer ul {
+    list-style: none;
+    font-size: 1.3em;
+    line-height: 1.8em;
+    border: 1x solid white;
 }

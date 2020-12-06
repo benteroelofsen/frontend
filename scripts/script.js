@@ -4,8 +4,8 @@
 
 
 function bgChanger() {
-    if (this.scrollY > this.innerHeight / .5 &&
-        this.scrollY < this.innerHeight * 4) {
+    if (this.scrollY > this.innerHeight / .6 &&
+        this.scrollY < this.innerHeight * 4.9) {
         document.body.classList.add("bg-active");
     } else {
         document.body.classList.remove("bg-active");
@@ -31,7 +31,7 @@ eerstedetails.addEventListener("toggle", event => {
 
 //Hamburgermenu
 
-var menubutton =document.querySelector("button:first-of-type");
+var menubutton = document.querySelector("button:first-of-type");
 
 menubutton.addEventListener("click", openMenu);
 
@@ -40,16 +40,13 @@ function openMenu(){
     hetmenu.classList.toggle("open");
 }
 
-//van menu naar kruisje
 
-//var menustrepen =document.querySelector("button:first-of-type");
-//
-//menustrepen.addEventListener("click", kruis);
-//
-//function kruis(){
-//    var streepboven = document.querySelector("button::after");
-//    var streeponder = document.querySelector("button::before");
-//
-//    streepboven.classList.toggle("gekruisd");
-//    streeponder.classList.toggle("gekruisd");
-//}
+// Verandering pijltjes
+
+// var beidepijlen = document.getElementById("beide-pijlen");
+
+// beidepijlen.addEventListener("click", veranderPijlen);
+
+// function veranderPijlen (){
+//     var linkerpijl = document.getElementById("pijl-links");
+//     linkerpijl.classList.toggle("huidige");
