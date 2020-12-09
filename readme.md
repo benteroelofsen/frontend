@@ -30,7 +30,43 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+
+-Javascript werkt niet mee-
+
+**Screenshot(s):**
+
+<img src="images/v2-eerste.png" alt="">
+<img src="images/v2-tweede.png" alt="">
+<img src="images/v2-derde.png" alt="">
+
+
+
+-screenshot(s) van hoe ver je bent met korte uitleg-
+-Ik heb alle html erin gezet. Ik ben verder gegaan met de styling. Ik ben hierbij vooral bezig geweest met de navigatie. -
+
+### Agenda voor meeting
+
+-samen met je groepje opstellen-
+
+**Ian**
+
+-Wilt meer uitleg over js-
+
+**Joep**
+
+-Wilt weten hoe je een website makkelijk responsive maakt.-
+
+**Merel**
+
+-Wilt graag weten in hoeverre het formulier moet werken-
+
+**Bente**
+
+-Ik wil graag hulp met js voor de 'slider'-
+-Ik wil graag hulp bij de vekleuring van de achtergrond bij verschillende telefoonformaten- 
+
+### Verslag van meeting
 
 
 

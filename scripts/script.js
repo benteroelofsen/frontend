@@ -36,17 +36,30 @@ var menubutton = document.querySelector("button:first-of-type");
 menubutton.addEventListener("click", openMenu);
 
 function openMenu(){
-    var hetmenu = document.querySelector("header nav");
-    hetmenu.classList.toggle("open");
+    var deheader = document.querySelector("header");
+    deheader.classList.toggle("open");
 }
 
 
-// Verandering pijltjes
+// Slider quotes
 
-// var beidepijlen = document.getElementById("beide-pijlen");
+var deButtons = document.querySelectorAll("section:nth-child(4) button");
 
-// beidepijlen.addEventListener("click", veranderPijlen);
+for(i=0; i<deButtons.length; i++) {
+  deButtons[i].addEventListener("click", scrollenMaar);
+}
 
-// function veranderPijlen (){
-//     var linkerpijl = document.getElementById("pijl-links");
-//     linkerpijl.classList.toggle("huidige");
+function scrollenMaar(event) {
+  let deButtonWaaropGekliktIs = event.target;
+  let deScrollRichting = deButtonWaaropGekliktIs.getAttribute("data-direction");
+  let deSectionWaarinGescrolldGaatWorden = deButtonWaaropGekliktIs.parentNode;
+  let deUlInDieSection = deSectionWaarinGescrolldGaatWorden.querySelector("ul");
+  let eersteItem = deUlInDieSection.querySelector("li");
+  let scrollAfstand = eersteItem.offsetWidth;
+  if (deScrollRichting == "prev") {
+    deUlInDieSection.scrollLeft -= scrollAfstand;
+  }
+  else if (deScrollRichting == "next") {
+    deUlInDieSection.scrollLeft += scrollAfstand;
+  }
+}

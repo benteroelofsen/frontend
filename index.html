@@ -16,16 +16,18 @@
 <body>
 
     <header>
-        <a><img src="images/logo.png" alt=""></a>
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
         <button class="menu-burger"></button>
         <nav>
             <ul>
-                <li>work</li>
-                <li>services</li>
-                <li>about</li>
-                <li>contact</li>
+                <li><a href="">work</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">contact</a></li>
             </ul>
-
+            <p>NEED INDUSTRY INSIGHTS?</p>
+            <a href="">Read our Blog</a>
+            <p>ALIEN &copy; 2020</p>
         </nav>
     </header>
 
@@ -89,30 +91,45 @@
 
             <a>See more work</a>
 
-            <img id="bedrijven" src="images/bedrijven.png" alt="">
+            <img src="images/bedrijven.png" alt="">
         </section>
 
         <section>
             <h2>Hear them</h2>
-            <div id="beide-pijlen">
-                <div id="pijl-links"></div>
-                <div id="pijl-rechts"></div>
-            </div>
+            <button data-direction="prev" aria-label="previous">&larr;</button>
+            <button data-direction="next" aria-label="next">&rarr;</button>
             <h2>say it.</h2>
 
-
-            <blockquote>
-                <p>
-                    Their client's success is a priority for them. Alien relies on their past experience and was
-                    always
-                    willing to privide an hinets opinion if they thougt one of our recommendations would have a
-                    negative
-                    impact on UX flow.
-                </p>
-            </blockquote>
-            <h3>Neeraja</h3>
-            <p>COO, ARISE ACADEMY</p>
-            <img src="images/rondefoto.png" alt="">
+            <ul>
+                <li>
+                    <blockquote>
+                        <p>
+                            Their client's success is a priority for them. Alien relies on their past experience and was
+                            always
+                            willing to privide an hinets opinion if they thougt one of our recommendations would have a
+                            negative
+                            impact on UX flow.
+                        </p>
+                    </blockquote>
+                    <h3>Neeraja</h3>
+                    <p>COO, ARISE ACADEMY</p>
+                    <img src="images/rondefoto.png" alt="">
+                </li>
+                <li>
+                    <blockquote>
+                        <p>
+                            Their client's success is a priority for them. Alien relies on their past experience and was
+                            always
+                            willing to privide an hinets opinion if they thougt one of our recommendations would have a
+                            negative
+                            impact on UX flow.
+                        </p>
+                    </blockquote>
+                    <h3>Neeraja</h3>
+                    <p>COO, ARISE ACADEMY</p>
+                    <img src="images/rondefoto.png" alt="">
+                </li>
+            </ul>
         </section>
 
         <section>
@@ -133,7 +150,4 @@
 
     </footer>
 
-    <script src=scripts/script.js></script>
-</body>
-
-</html>
+    <script src=scripts/script.js> </script> </body> </html>
