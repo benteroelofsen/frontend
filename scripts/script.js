@@ -63,3 +63,5 @@ function scrollenMaar(event) {
     deUlInDieSection.scrollLeft += scrollAfstand;
   }
 }
+
+// https://codepen.io/shooft/pen/zYqJLvZ

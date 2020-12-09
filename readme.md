@@ -43,7 +43,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 -screenshot(s) van hoe ver je bent met korte uitleg-
--Ik heb alle html erin gezet. Ik ben verder gegaan met de styling. Ik ben hierbij vooral bezig geweest met de navigatie. -
+
+-Ik heb alle html erin gezet. Ik ben verder gegaan met de styling. Ik ben hierbij vooral bezig geweest met de navigatie. Daarnaast heb ik een slider toegevoegd voor de quotes.-
 
 ### Agenda voor meeting
 
@@ -55,7 +56,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Joep**
 
--Wilt weten hoe je een website makkelijk responsive maakt.-
+-Wilt weten of je een ul in een ul kan zetten.-
 
 **Merel**
 
@@ -63,7 +64,6 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Bente**
 
--Ik wil graag hulp met js voor de 'slider'-
 -Ik wil graag hulp bij de vekleuring van de achtergrond bij verschillende telefoonformaten- 
 
 ### Verslag van meeting
