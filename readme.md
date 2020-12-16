@@ -24,7 +24,45 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+
+- Ik heb deze week vrij weinig tijd gehad dus heb niet veel aangepast. Ik was echter al erg ver dus dit zorgt niet voor problemen. Ik heb de pijljes van de summary kunnen laten draaien.-
+
+**Screenshot(s):**
+
+<img src="images/v3-eerste.png" alt="">
+<img src="images/v3-tweede.png" alt="">
+
+
+
+-Ik had eerst problemen met het laten draaien van het pijltje. Ik dacht dat dit javascript moest, maar dit werkte niet. Dit bleek niet nodig te zijn. Tijdens de les is het probleem met css opgelost.-
+
+-Ik heb alle html erin gezet. Ik ben verder gegaan met de styling. Ik ben hierbij vooral bezig geweest met de navigatie. Daarnaast heb ik een slider toegevoegd voor de quotes.-
+
+### Agenda voor meeting
+
+-samen met je groepje opstellen-
+
+**Ian**
+
+-Wilt meer uitleg over js-
+
+**Joep**
+
+-Wilt meer weten over javascript voor het uitklappen van het menu.-
+
+**Merel**
+
+-Wilt graag weten hoe de achtergrond foto weg gaat bij de contactpagina.-
+
+**Bente**
+
+-Ik wil weten hoe de true en false statement werkt.- 
+
+### Verslag van meeting
+-- 
+
+
 
 
 
@@ -32,7 +70,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--Javascript werkt niet mee-
+-Het ging allemaal best goed. Merk dat ik het steeds beter onder de knie heb. Vooral dingen op de juiste plek krijgen vond ik eerst lastig, maar gaat nu goed. Verder ben ik druk bezig geweest met slider en animaties. Dit verliep redelijk soepel. Ben tot nu toe erg blij met het resultaat.-
 
 **Screenshot(s):**
 
@@ -64,17 +102,18 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Bente**
 
--Ik wil graag hulp bij de vekleuring van de achtergrond bij verschillende telefoonformaten- 
+-Ik wil graag hulp bij de vekleuring van de achtergrond bij verschillende telefoonformaten.-
+-Er is een paarse lijn verdwenen- 
 
 ### Verslag van meeting
-
+-We hebben alle problemen behandeld en opgelost. Ik weet nu hoe ik verder moet met de vekleuring van de achtergrond. Ik moet in javascript niet gerbuiken van window maar van section om het responsive te maken. Verder was er een paarse lijn verdwenen doordat ik position:absolute had gebruikt. Nu heb ik het met margin gedaan en is ook dat probleem opgelost. Nadat ik heb aangepast hoef ik alleen de footer en summary's te stylen.- 
 
 
 ## Voortgang 1 (week 3)
 
 ### Stand van zaken
 
--Javascript werkte niet zoals geplant-
+-Javascript werkte niet zoals geplant. Ik probeerde een pijltje te laten bewegen wanneer er over een knop werd gehoverd. Het linken van de elementen in javascript werkte niet.-
 
 **Screenshot(s):**
 
@@ -85,7 +124,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 -screenshot(s) van hoe ver je bent met korte uitleg-
-- De achtergrond laat ik veranderen van zwart naar wit. Ik heb de summary's gestyld. -
+- De achtergrond laat ik veranderen van zwart naar wit met hulp van Marvin. Ik heb de summary's gestyld. -
 
 ### Agenda voor meeting
 

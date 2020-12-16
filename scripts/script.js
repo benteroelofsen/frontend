@@ -16,17 +16,17 @@ window.addEventListener("scroll", bgChanger);
 
 // https://www.youtube.com/watch?v=z_vvY7YX3so
 
-var eerstedetails = document.querySelector("details:first-of-type");
-
 //Dropdown details
 
-eerstedetails.addEventListener("toggle", event => {
-    if (eerstedetails.open) {
-        alert("ik ben open");
-    } else {
-        alert("ik ben dicht");
-    }
-});
+// var eerstedetails = document.querySelector("details:first-of-type");
+
+// eerstedetails.addEventListener("toggle", event => {
+//     if (eerstedetails.open) {
+//         alert("ik ben open");
+//     } else {
+//         alert("ik ben dicht");
+//     }
+// });
 
 
 //Hamburgermenu
