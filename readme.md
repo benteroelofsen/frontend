@@ -8,7 +8,6 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 1. -https://www.youtube.com/watch?v=z_vvY7YX3so-
 2. -https://codepen.io/shooft/pen/zYqJLvZ-
-3. -...-
 
 
 
