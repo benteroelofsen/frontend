@@ -10,6 +10,9 @@ function bgChanger() {
     } else {
         document.body.classList.remove("bg-active");
     }
+    if (this.scrollY > this.innerHeight / 1.6) {
+      document.body.classList.add("invliegen");
+    }
 }
 
 window.addEventListener("scroll", bgChanger);
@@ -18,16 +21,34 @@ window.addEventListener("scroll", bgChanger);
 
 //Dropdown details
 
-// var eerstedetails = document.querySelector("details:first-of-type");
+var eerstedetails = document.querySelector("details:first-of-type");
+var tweededetails = document.querySelector("details:nth-of-type(2)");
+var derdedetails = document.querySelector("details:nth-of-type(3)");
+var vierdedetails = document.querySelector("details:nth-of-type(4)");
 
-// eerstedetails.addEventListener("toggle", event => {
-//     if (eerstedetails.open) {
-//         alert("ik ben open");
-//     } else {
-//         alert("ik ben dicht");
-//     }
-// });
+eerstedetails.addEventListener("toggle", event => {
+    tweededetails.removeAttribute("open");
+    derdedetails.removeAttribute("open");
+    vierdedetails.removeAttribute("open");
+});
 
+tweededetails.addEventListener("toggle", event => {
+  eerstedetails.removeAttribute("open");
+  derdedetails.removeAttribute("open");
+  vierdedetails.removeAttribute("open");
+});
+
+derdedetails.addEventListener("toggle", event => {
+  eerstedetails.removeAttribute("open");
+  tweededetails.removeAttribute("open");
+  vierdedetails.removeAttribute("open");
+});
+
+vierdedetails.addEventListener("toggle", event => {
+  eerstedetails.removeAttribute("open");
+  tweededetails.removeAttribute("open");
+  derdedetails.removeAttribute("open");
+});
 
 //Hamburgermenu
 
@@ -46,21 +67,21 @@ function openMenu(){
 var deButtons = document.querySelectorAll("section:nth-child(4) button");
 
 for(i=0; i<deButtons.length; i++) {
-  deButtons[i].addEventListener("click", scrollenMaar);
+  deButtons[i].addEventListener("click", horizontaalScrollen);
 }
 
-function scrollenMaar(event) {
-  let deButtonWaaropGekliktIs = event.target;
-  let deScrollRichting = deButtonWaaropGekliktIs.getAttribute("data-direction");
-  let deSectionWaarinGescrolldGaatWorden = deButtonWaaropGekliktIs.parentNode;
-  let deUlInDieSection = deSectionWaarinGescrolldGaatWorden.querySelector("ul");
-  let eersteItem = deUlInDieSection.querySelector("li");
+function horizontaalScrollen(event) {
+  let geklikteButton = event.target;
+  let scrollRichting = geklikteButton.getAttribute("data-direction");
+  let sectionScrollen = geklikteButton.parentNode;
+  let deUl = sectionScrollen.querySelector("ul");
+  let eersteItem = deUl.querySelector("li");
   let scrollAfstand = eersteItem.offsetWidth;
-  if (deScrollRichting == "prev") {
-    deUlInDieSection.scrollLeft -= scrollAfstand;
+  if (scrollRichting == "prev") {
+    deUl.scrollLeft -= scrollAfstand;
   }
-  else if (deScrollRichting == "next") {
-    deUlInDieSection.scrollLeft += scrollAfstand;
+  else if (scrollRichting == "next") {
+    deUl.scrollLeft += scrollAfstand;
   }
 }
 

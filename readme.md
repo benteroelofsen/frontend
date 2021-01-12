@@ -6,21 +6,28 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
+1. -https://www.youtube.com/watch?v=z_vvY7YX3so-
+2. -https://codepen.io/shooft/pen/zYqJLvZ-
 3. -...-
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+-Ik was al erg ver dus hoefde alleen nog de tweede pagina te maken. Dat verliep redelijk oké. ik liep wel een paar keer tegen hetzelfde probleem aan; code klopt maar het werkt niet. Er zal vast een fout zijn geweest maar zover ik kan vinden niet. Zo werkt bijvoorbeeld de nav wel op de homepagina, maar niet op de Services pagina. Ik heb lang gezocht wat er fout was maar kon niks vinden. Verder stond er ook nergens een probleem gemeld die het verklaarde. Ik begrijp nog steeds niet waarom dit niet werkt, aangezien het een kwestie van kopiëren en plakken is. Daarnaast heb ik nog een probleem niet kunnen oplossen, het veranderen van de achtergrondkleur. De achtergrond verandert nu op basis van de hoogte van het scherm, wat dus verschilt per telefoon. Ik  moest dit daarom in section veranderen, omdat bepaalde elementen niet te lezen waren als het beeld te snel wit werd. Ik heb echter overal op internet gezocht en zelf wat geprobeerd in te vullen, maar zonder succes. Ik ben ook niet heel goed in Javascript dus heb het helaas niet op eigen kracht kunnen oplossen. Verder heb ik mijn code netjes gemaakt en states van de knoppen toegevoegd, zoals :focus en :active. Ondanks de paar puntjes die ik niet heb kunnen oplossen ben ik erg tevreden met het resultaat en hoop dat mijn site en mijn harde geploeter voor een voldoende zorgen. :)-
 
 **Screenshot(s):**
 
 -screenshot(s) van je eindresultaat-
-
-
+<img src="images/eind-1.png" alt="">
+<img src="images/eind-2.png" alt="">
+<img src="images/eind-3.png" alt="">
+<img src="images/eind-4.png" alt="">
+<img src="images/eind-5.png" alt="">
+<img src="images/eind-6.png" alt="">
+<img src="images/eind-7.png" alt="">
+<img src="images/eind-8.png" alt="">
+<img src="images/eind-9.png" alt="">
 
 ## Voortgang 3 (week 6)
 
@@ -60,7 +67,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -Ik wil weten hoe de true en false statement werkt.- 
 
 ### Verslag van meeting
--- 
+-De problemen zijn opgelost. Ik heb met behulp van de docent de javascript geschreven waardoor maar één element tegelijk uitgeklapt kan zijn. De oplossing was heel anders dan ik had gedacht of al had geprobeerd. Ik begrijp nu wel de werking van de statement. Verder hadden we Joep even wat meer op weg geholpen, die was nog niet zo ver. Ook Merel was geholpen met de contactpagina en kon weer verder.- 
 
 
 
